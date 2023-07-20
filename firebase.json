@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "bin\Release\net6.0\publish",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

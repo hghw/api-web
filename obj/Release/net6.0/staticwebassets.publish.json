@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7eMB5RitlEYrxdBQYAOSchzGAfRGj+Hys8rz9cVYXYc=",
+  "Source": "api-web",
+  "BasePath": "_content/api-web",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
