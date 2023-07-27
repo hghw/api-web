@@ -56,3 +56,13 @@ C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Dapper.dll
 C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Dapper.FastCrud.dll
 C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Smooth.IoC.Dapper.Repository.UnitOfWork.dll
 C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Smooth.IoC.UnitOfWork.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\firebase.json
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\package-lock.json
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\package.json
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Acer\OneDrive\Máy tính\api-web\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
