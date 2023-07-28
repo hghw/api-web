@@ -10,5 +10,9 @@
             this.status = status;
             this.data = data;
         }
+        public RestData(string status)
+        {
+            this.status = status;
+        }
     }
 }

@@ -7,6 +7,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using WebAPI;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace api_web.Controllers
 {
@@ -25,10 +26,25 @@ namespace api_web.Controllers
 
 
         [AllowAnonymous]
-        [HttpPost("/security/createToken")]
+        [HttpPost("/login/token")]
         public string Token(User user)
         {
-            if (user.UserName == "joydip" && user.Password == "joydip123")
+            List<User> list = new List<User>()
+            {
+                new User()
+                {
+                    UserName = "huy",
+                    Password = "huy123"
+                },
+                new User()
+                {
+                    UserName = "sa",
+                    Password = "123456"
+                }
+            };
+            var isAuthenticate = list.Where(x => x.UserName == user.UserName && x.Password == user.Password).FirstOrDefault();
+
+            if (isAuthenticate != null)
             {
                 var issuer = ConfigurationManagerBuilder.AppSetting["Jwt:Issuer"];
                 var audience = ConfigurationManagerBuilder.AppSetting["Jwt:Audience"];
@@ -38,12 +54,12 @@ namespace api_web.Controllers
                 {
                     Subject = new ClaimsIdentity(new[]
                     {
-                new Claim("Id", Guid.NewGuid().ToString()),
-                new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Email, user.UserName),
-                new Claim(JwtRegisteredClaimNames.Jti,
-                Guid.NewGuid().ToString())
-             }),
+                        new Claim("Id", Guid.NewGuid().ToString()),
+                        new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
+                        new Claim(JwtRegisteredClaimNames.Email, user.UserName),
+                        new Claim(JwtRegisteredClaimNames.Jti,
+                        Guid.NewGuid().ToString())
+                }),
                     Expires = DateTime.UtcNow.AddMinutes(5),
                     Issuer = issuer,
                     Audience = audience,
@@ -59,11 +75,11 @@ namespace api_web.Controllers
             }
             else
             {
-                return "";
+                return "Sai tài khoản hoặc mật khẩu!";
             }
-
         }
-
+        //jwt
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [HttpGet("list")]
         public RestData List()
         {
@@ -74,7 +90,7 @@ namespace api_web.Controllers
             }
             catch (Exception e)
             {
-                return new RestData(status: e.Message, data: null);
+                return new RestData(status: e.Message);
             }
 
         }
@@ -92,7 +108,7 @@ namespace api_web.Controllers
             }
             catch (Exception e)
             {
-                return new RestData(status: e.Message, data: null);
+                return new RestData(status: e.Message);
             }
         }
         [HttpPost("add")]
@@ -121,11 +137,11 @@ namespace api_web.Controllers
                     _context.Locations.Add(dbTable);
                 }
                 _context.SaveChanges();
-                return new RestData(status: "OK", data: null);
+                return new RestData(status: "OK");
             }
             catch (Exception e)
             {
-                return new RestData(status: e.Message, data: null);
+                return new RestData(status: e.Message);
             }
 
 
