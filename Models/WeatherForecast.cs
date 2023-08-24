@@ -1,4 +1,4 @@
-namespace api_web
+namespace api_web.Models
 {
     public class WeatherForecast
     {

@@ -4,15 +4,19 @@
     {
         public string status { get; set; }
         public dynamic? data { get; set; }
-
-        public RestData(string status, dynamic? data)
+        public RestData()
         {
-            this.status = status;
-            this.data = data;
+            this.status = "OK";
         }
         public RestData(string status)
         {
             this.status = status;
         }
+        public RestData(string status, dynamic? data)
+        {
+            this.status = status;
+            this.data = data;
+        }
+
     }
 }

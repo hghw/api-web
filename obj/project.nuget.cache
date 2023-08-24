@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G6JNAd1dU8rzvKWphedFYVxPzDfr1usEez48nPJLh6cl2wLCf3h7jLMFkSYoCBYFiFm5ABZpuTC+JLShXanlfA==",
+  "dgSpecHash": "5W3waiRYGqNtSwTDoz+Hzqhfm7it2OTd7ETlMUmr2lvqnNstdA7bIME3U3xkZLojKHkGwzUKbF9IL/8qWMAMng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\OneDrive\\Máy tính\\api-web\\api-web.csproj",
+  "projectFilePath": "C:\\tools\\Documents\\api custom c#\\api-web\\api-web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\dapper\\2.0.143\\dapper.2.0.143.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\dapper.fastcrud\\3.1.46\\dapper.fastcrud.3.1.46.nupkg.sha512",
@@ -65,6 +65,12 @@
     "C:\\Users\\Acer\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.1.52:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -3029,11 +3029,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\OneDrive\\Máy tính\\api-web\\api-web.csproj",
+      "projectUniqueName": "C:\\tools\\Documents\\api custom c#\\api-web\\api-web.csproj",
       "projectName": "api-web",
-      "projectPath": "C:\\Users\\Acer\\OneDrive\\Máy tính\\api-web\\api-web.csproj",
+      "projectPath": "C:\\tools\\Documents\\api custom c#\\api-web\\api-web.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\OneDrive\\Máy tính\\api-web\\obj\\",
+      "outputPath": "C:\\tools\\Documents\\api custom c#\\api-web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3044,6 +3044,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://192.168.1.52:5555/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3121,6 +3122,12 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://192.168.1.52:5555/v3/index.json'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    },
     {
       "code": "NU1701",
       "level": "Warning",
